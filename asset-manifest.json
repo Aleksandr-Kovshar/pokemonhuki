@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/pokemonhuki/static/css/main.84d221b4.css",
+    "main.js": "/pokemonhuki/static/js/main.85a27c22.js",
+    "static/media/pending.webp": "/pokemonhuki/static/media/pending.95003717b3ef4828d183.webp",
+    "static/media/error.jpg": "/pokemonhuki/static/media/error.e6243697c6719b8e9d93.jpg",
+    "index.html": "/pokemonhuki/index.html",
+    "main.84d221b4.css.map": "/pokemonhuki/static/css/main.84d221b4.css.map",
+    "main.85a27c22.js.map": "/pokemonhuki/static/js/main.85a27c22.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.84d221b4.css",
+    "static/js/main.85a27c22.js"
+  ]
+}
