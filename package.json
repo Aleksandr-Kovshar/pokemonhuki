@@ -1,7 +1,7 @@
 {
-  "name": "practice_react3",
+  "name": "pokemonhuki",
   "version": "0.1.0",
-  "homepage": "https://Aleksandr-Kovshar.github.io/practice_react3",
+  "homepage": "https://Aleksandr-Kovshar.github.io/pokemonhuki",
   "private": false,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
