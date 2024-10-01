@@ -1,31 +1,31 @@
-import React, { Component } from "react";
-import "./App.css";
-import { ToastContainer } from "react-toastify";
-import 'react-toastify/dist/ReactToastify.css';
-import PokemonForm from "components/PokemonForm";
-import PokemonInfo from "components/PokemonInfo";
+// import React, { Component } from "react";
+// import "./App.css";
+// import { ToastContainer } from "react-toastify";
+// import 'react-toastify/dist/ReactToastify.css';
+// import PokemonForm from "components/PokemonForm";
+// import PokemonInfo from "components/PokemonInfo";
 
 
-class App extends Component {
-  state = {
-    pokemonName: null,
-  };
+// class App extends Component {
+//   state = {
+//     pokemonName: null,
+//   };
 
-  handleFormSubmit = (pokemonName) => {
-    console.log(pokemonName);
-    this.setState({pokemonName})
-  };
+//   handleFormSubmit = (pokemonName) => {
+//     console.log(pokemonName);
+//     this.setState({pokemonName})
+//   };
 
-  render() {
-    return (
-      <div style={{ maxWidth: 1170, margin: "0 auto", padding: 20 }}>
-        <PokemonForm onSubmit={this.handleFormSubmit} />
-        <PokemonInfo pokemonName = {this.state.pokemonName}/>
-        <ToastContainer autoClose={3000}/>
-      </div>
-    );
-  }
-}
+//   render() {
+//     return (
+//       <div style={{ maxWidth: 1170, margin: "0 auto", padding: 20 }}>
+//         <PokemonForm onSubmit={this.handleFormSubmit} />
+//         <PokemonInfo pokemonName = {this.state.pokemonName}/>
+//         <ToastContainer autoClose={3000}/>
+//       </div>
+//     );
+//   }
+// }
 
 // class App extends Component {
 //   state = {
@@ -51,5 +51,32 @@ class App extends Component {
 //     );
 //   }
 // }
+
+
+
+import "./App.css";
+import { ToastContainer } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
+import PokemonForm from "components/PokemonForm";
+import PokemonInfo from "components/PokemonInfo";
+import { useState } from "react";
+
+
+function App (){
+
+  const [pokemonName, setPokemonName]= useState("");
+
+  return (
+           <div style={{ maxWidth: 1170, margin: "0 auto", padding: 20 }}>
+            <PokemonForm onSubmit={setPokemonName} />
+            <PokemonInfo pokemonName = {pokemonName}/>
+            <ToastContainer autoClose={3000}/>
+          </div>
+        );
+}
+
+
+
+
 
 export default App;

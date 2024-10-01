@@ -9,6 +9,6 @@ export function fetchPokemon(name){
      );
    }) 
 };
-const api= {fetchPokemon,}
+const api= {fetchPokemon}
 
 export default api;
